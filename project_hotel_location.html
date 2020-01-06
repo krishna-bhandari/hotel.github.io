@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="project_hotel.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="project_hotel.js"></script>
+	<title></title>
+	
+</head>
+<body bgcolor=#FF0080>
+	<h1 id="firsth1">Welcome To Travel Care</h1><br>
+<form name="oneTimeForm" title="Your Info">
+	<h1 id="firsth3" align="center">Please enter your choice</h1>
+	<table align="center" title="your Info." cellpadding="15px">
+		<tr>
+			<td style="font-family: cursive;">
+				Location
+			</td>
+			<td>
+				:<select name="cityList" id="selectCity">
+					<option value="Pokhara">Pokhara</option>
+					<option value="Kathmandu">Kathmandu</option>
+					<option value="Chitwan">Chitwan</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td style="font-family: cursive;">
+				Number of Rooms
+			</td>
+			<td>
+				:<select name="numOfRoom" id="NumOfRoom">
+					<option>1</option><option>2</option><option>3</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td style="font-family: cursive;">
+				Number of Beds
+			</td>
+			<td>
+				:<select name="numOfBeds" id="NumOfBeds">
+					<option>1</option><option>2</option><option>3</option>
+				</select>
+			</td>
+		</tr>
+		<td style="font-family: cursive;">
+			Cost Range
+		</td>
+		<td>
+			:<select name="cost" id="cost">
+					<option>300-500</option><option>500-1000</option><option>above 1000</option>
+				</select>
+		</td>
+		<tr>
+			<td>
+				<input type="Reset" value="Reset" id="resetBtn" >
+			</td>
+			<td>
+				
+				<input type="button" value="Search" onclick="getHotels()" id="searchBtn">
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
